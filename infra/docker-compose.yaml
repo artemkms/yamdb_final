@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
   web:
-    image: artemkmms/api_yamdb:latest
+    image: artemkms/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
