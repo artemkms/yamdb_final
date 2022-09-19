@@ -2,7 +2,7 @@
 
 Настройка CI/CD процессов для проекта [API_YaMDb](https://github.com/artemkms/api_yamdb), который собирает отзывы для пользователей на различные произведения.  
 
-![](https://github.com/artemkms/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
+![Yamdb_workflow](https://github.com/artemkms/yamdb_final/workflows/yamdb_workflow.yaml/badge.svg)
 
 ### Описание
 Для проекта настроен полный непрерывный процесс разработки, тестирования и деплоя кода на боевой сервер. В качестве сервиса для построения процессов CI(continue integration) 
