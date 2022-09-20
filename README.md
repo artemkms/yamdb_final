@@ -3,7 +3,6 @@
 Настройка CI/CD процессов для проекта [API_YaMDb](https://github.com/artemkms/api_yamdb), который собирает отзывы для пользователей на различные произведения.  
 
 ![Yamdb_workflow](https://github.com/artemkms/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
-<<<<<<< HEAD
 
 ### Адрес сайта
 http://84.201.142.85/redoc/
