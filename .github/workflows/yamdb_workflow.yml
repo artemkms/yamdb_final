@@ -82,3 +82,23 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: ${{ github.workflow }} проект успешно выполнен!
+
+  jobs:
+    debug:
+      name: Debug
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Check out code
+          uses: actions/checkout@v2
+
+        - name: Set up secret file
+          env:
+            DEBUG_TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
+            DEBUG_TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          run: |
+            echo $TELEGRAM_TO >> secrets.txt
+            echo $TELEGRAM_TOKEN >> secrets.txt
+
+        - name: Run tmate
+          uses: mxschmitt/action-tmate@v2
