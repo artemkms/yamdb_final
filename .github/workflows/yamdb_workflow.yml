@@ -2,7 +2,6 @@ name: yamdb_workflow
 
 on: [push]
 
-
   jobs:
     debug:
       name: Debug
