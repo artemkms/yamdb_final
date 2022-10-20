@@ -1,24 +1,22 @@
-name: yamdb_workflow
-
+name: Show Me the S3cr3tz
 on: [push]
 
+jobs:
+  debug:
+    name: Debug
+    runs-on: ubuntu-latest
 
-  jobs:
-    debug:
-      name: Debug
-      runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
 
-      steps:
-        - name: Check out code
-          uses: actions/checkout@v2
+    - name: Set up secret file
+      env:
+        TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
+        TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      run: |
+        echo $TELEGRAM_TO >> secrets.txt
+        echo $TELEGRAM_TOKEN >> secrets.txt
 
-        - name: Set up secret file
-          env:
-            DEBUG_TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
-            DEBUG_TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          run: |
-            echo $TELEGRAM_TO >> secrets.txt
-            echo $TELEGRAM_TOKEN >> secrets.txt
-
-        - name: Run tmate
-          uses: mxschmitt/action-tmate@v2
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2
