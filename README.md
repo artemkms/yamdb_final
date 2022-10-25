@@ -1,6 +1,8 @@
 # CI/CD для проекта YAMDb API.
 
-Настройка CI/CD процессов для проекта [API_YaMDb](https://github.com/artemkms/api_yamdb), который собирает отзывы для пользователей на различные произведения.  
+Настройка CI/CD процессов для проекта [API_YaMDb](https://github.com/artemkms/api_yamdb), который собирает отзывы для пользователей на различные произведения. 
+
+![Yamdb_workflow](https://github.com/artemkms/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 
 ### Адрес сайта
 http://временно изменен
