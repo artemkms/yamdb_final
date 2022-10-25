@@ -2,10 +2,8 @@
 
 Настройка CI/CD процессов для проекта [API_YaMDb](https://github.com/artemkms/api_yamdb), который собирает отзывы для пользователей на различные произведения.  
 
-![Yamdb_workflow](https://github.com/artemkms/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
-
 ### Адрес сайта
-http://84.201.142.85/redoc/
+http://временно изменен
 
 ### Описание
 Для проекта настроен полный непрерывный процесс разработки, тестирования и деплоя кода на боевой сервер. В качестве сервиса для построения процессов CI(continue integration) 
